@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Metodos" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores primarios y de acento de nuestra marca -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Asignamos nuestros estilos personalizados a los componentes por defecto -->
+        <!-- NOTA: No es necesario redefinir los estilos 'Widget.App...', los hereda del archivo base -->
+
+        <!-- Definimos colores explícitos para el modo oscuro -->
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+        <!-- Aquí está la clave: colorSurface define el fondo de tarjetas, diálogos y el navbar -->
+        <item name="colorSurface">@color/card_background_dark</item>
+    </style>
+</resources>

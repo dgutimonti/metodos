@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Metodos" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores primarios y de acento de nuestra marca -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Asignamos nuestros estilos personalizados a los componentes por defecto -->
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+
+        <!-- Definimos colores explícitos para el modo claro -->
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+        <item name="colorSurface">@color/card_background_light</item>
+    </style>
+
+    <style name="Theme.Metodos" parent="Base.Theme.Metodos" />
+
+    <!-- ESTILO PERSONALIZADO PARA LOS BOTONES -->
+    <style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <!-- Forzamos el color de fondo a nuestro color de acento (rojo) -->
+        <item name="backgroundTint">@color/colorAccent</item>
+        <!-- Aseguramos que el texto del botón sea blanco para que contraste -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- ESTILO PERSONALIZADO PARA LA BARRA DE NAVEGACIÓN -->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <!-- El color de fondo usará el 'colorSurface' definido en el tema (blanco en claro, gris oscuro en noche) -->
+        <item name="android:background">?attr/colorSurface</item>
+    </style>
+
+</resources>
+
